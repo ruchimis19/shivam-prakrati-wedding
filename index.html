@@ -207,7 +207,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     transform: scale(1.03);
     opacity: 0.35;
   }
@@ -731,7 +730,7 @@
 
 <div class="phone">
   <div>
-  <audio id="bgMusic" loop preload="auto">
+  <audio id="bgMusic" loop preload="none">
   <source src="song (1).mp3" type="audio/mpeg">
 </audio>
 </div>
@@ -934,6 +933,8 @@
   const stories = document.getElementById('stories');
   const slides = Array.from(document.querySelectorAll('.slide'));
   const progressRow = document.getElementById('progressRow');
+  ['P1829989.JPG','P1830386.JPG','P1830353.JPG','Both.jpeg','Prakrati.jpeg','_ROO3682.JPG','hotel.jpeg']
+  .forEach(src => { const i = new Image(); i.src = src; });
 
   slides.forEach(() => {
     const seg = document.createElement('div');
