@@ -207,7 +207,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transform: scale(1.03);
     opacity: 0.35;
   }
   .bg-slide::after{
@@ -227,7 +226,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+
 
 }
 .bg-slide-groom::after{
@@ -248,7 +247,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.03);
 }
 .bg-slide-both::after{
   content:'';
@@ -268,7 +266,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  
 }
 .bg-slide-bride::after{
   content:'';
@@ -288,7 +286,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.03);
+  
 }
 .bg-slide-resort::after{
   content:'';
@@ -929,12 +927,13 @@
 
 <script>
 
+['P1829989.JPG','P1830386.JPG','P1830353.JPG','Both.jpeg','Prakrati.jpeg','_ROO3682.JPG','hotel.jpeg']
+  .forEach(src => { const i = new Image(); i.src = src; });
   const cover = document.getElementById('cover');
   const stories = document.getElementById('stories');
   const slides = Array.from(document.querySelectorAll('.slide'));
   const progressRow = document.getElementById('progressRow');
-  ['P1829989.JPG','P1830386.JPG','P1830353.JPG','Both.jpeg','Prakrati.jpeg','_ROO3682.JPG','hotel.jpeg']
-  .forEach(src => { const i = new Image(); i.src = src; });
+  
 
   slides.forEach(() => {
     const seg = document.createElement('div');
