@@ -28,6 +28,7 @@
     align-items:center;
     justify-content:center;
     min-height:100vh;
+    min-height:100dvh;
     overflow:hidden;
   }
 
@@ -35,6 +36,7 @@
     position:relative;
     width:min(420px,100vw);
     height:min(880px,100vh);
+    height:min(880px,100dvh);
     background:var(--cream);
     overflow:hidden;
     box-shadow:0 30px 80px rgba(0,0,0,0.6);
@@ -161,7 +163,7 @@
     height:100%;
     overflow-y:scroll;
     overflow-x:hidden;
-    scroll-snap-type:y mandatory;
+    scroll-snap-type:y proximity;
     scroll-behavior:smooth;
     -webkit-overflow-scrolling:touch;
   }
@@ -176,7 +178,7 @@
     display:flex; flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding:64px 26px 70px;
+    padding:64px 26px 90px;
     text-align:center;
     background-color:var(--cream);
     scroll-snap-align:start;
@@ -532,7 +534,7 @@
     <!-- Slide 1: Invocation -->
     <div class="slide bg-slide">
       <div class="eyebrow">With Divine Blessings</div>
-      <div class="rings">💍</div>
+      <div class="rings">💞</div>
       <p class="invocation-text">
         Destiny brought us together, with the divine blessings of our elders and the love of our family,
         we invite you to witness our promises as we say "I do".
